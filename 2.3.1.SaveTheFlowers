@@ -1,0 +1,25 @@
+
+void saveTheFlowers(){repeat(4){
+        Stieg();
+        pickBeeper();
+    }Stieg();
+    dropBeeper();
+    repeat(3){
+        Stak();
+        dropBeeper();
+    }Stak();
+}
+void Stieg(){
+    turnLeft();
+    while( !rightIsClear()){
+        moveForward();}
+    turnRight(); 
+    moveForward();
+}
+void Stak(){
+    moveForward();
+    turnRight();
+    while(frontIsClear()){
+        moveForward();}
+    turnLeft();
+}
